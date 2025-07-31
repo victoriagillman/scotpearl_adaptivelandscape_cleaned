@@ -1,0 +1,323 @@
+"","name","layer_code","row_number"
+"130","Minimum elevation","FW_dem_min",1
+"131","Maximum elevation","FW_dem_max",2
+"132","Elevation range","FW_dem_range",3
+"133","Average elevation","FW_dem_avg",4
+"134","Minimum slope","FW_slope_min",5
+"135","Maximum slope","FW_slope_max",6
+"136","Slope range","FW_slope_range",7
+"137","Average slope","FW_slope_avg",8
+"138","Number of upstream stream grid cells","FW_flow_length",9
+"139","Number of upstream catchment grid cells","FW_flow_acc",10
+"140","Min. monthly air temperature for January","FW_tmin_avg_01",11
+"141","Min. monthly air temperature for February","FW_tmin_avg_02",12
+"142","Min. monthly air temperature for March","FW_tmin_avg_03",13
+"143","Min. monthly air temperature for April","FW_tmin_avg_04",14
+"144","Min. monthly air temperature for May","FW_tmin_avg_05",15
+"145","Min. monthly air temperature for June","FW_tmin_avg_06",16
+"146","Min. monthly air temperature for July","FW_tmin_avg_07",17
+"147","Min. monthly air temperature for August","FW_tmin_avg_08",18
+"148","Min. monthly air temperature for September","FW_tmin_avg_09",19
+"149","Min. monthly air temperature for October","FW_tmin_avg_10",20
+"150","Min. monthly air temperature for November","FW_tmin_avg_11",21
+"151","Min. monthly air temperature for December","FW_tmin_avg_12",22
+"152","Max. monthly air temperature for January","FW_tmax_avg_01",23
+"153","Max. monthly air temperature for February","FW_tmax_avg_02",24
+"154","Max. monthly air temperature for March","FW_tmax_avg_03",25
+"155","Max. monthly air temperature for April","FW_tmax_avg_04",26
+"156","Max. monthly air temperature for May","FW_tmax_avg_05",27
+"157","Max. monthly air temperature for June","FW_tmax_avg_06",28
+"158","Max. monthly air temperature for July","FW_tmax_avg_07",29
+"159","Max. monthly air temperature for August","FW_tmax_avg_08",30
+"160","Max. monthly air temperature for September","FW_tmax_avg_09",31
+"161","Max. monthly air temperature for October","FW_tmax_avg_10",32
+"162","Max. monthly air temperature for November","FW_tmax_avg_11",33
+"163","Max. monthly air temperature for December","FW_tmax_avg_12",34
+"164","Sum of monthly precipitation for January","FW_prec_sum_01",35
+"165","Sum of monthly precipitation for February","FW_prec_sum_02",36
+"166","Sum of monthly precipitation for March","FW_prec_sum_03",37
+"167","Sum of monthly precipitation for April","FW_prec_sum_04",38
+"168","Sum of monthly precipitation for May","FW_prec_sum_05",39
+"169","Sum of monthly precipitation for June","FW_prec_sum_06",40
+"170","Sum of monthly precipitation for July","FW_prec_sum_07",41
+"171","Sum of monthly precipitation for August","FW_prec_sum_08",42
+"172","Sum of monthly precipitation for September","FW_prec_sum_09",43
+"173","Sum of monthly precipitation for October","FW_prec_sum_10",44
+"174","Sum of monthly precipitation for November","FW_prec_sum_11",45
+"175","Sum of monthly precipitation for December","FW_prec_sum_12",46
+"176","Min. monthly air temperature January","FW_tmin_wavg_01",47
+"177","Min. monthly air temperature February","FW_tmin_wavg_02",48
+"178","Min. monthly air temperature March","FW_tmin_wavg_03",49
+"179","Min. monthly air temperature April","FW_tmin_wavg_04",50
+"180","Min. monthly air temperature May","FW_tmin_wavg_05",51
+"181","Min. monthly air temperature June","FW_tmin_wavg_06",52
+"182","Min. monthly air temperature July","FW_tmin_wavg_07",53
+"183","Min. monthly air temperature August","FW_tmin_wavg_08",54
+"184","Min. monthly air temperature September","FW_tmin_wavg_09",55
+"185","Min. monthly air temperature October","FW_tmin_wavg_10",56
+"186","Min. monthly air temperature November","FW_tmin_wavg_11",57
+"187","Min. monthly air temperature December","FW_tmin_wavg_12",58
+"188","Max. monthly air temperature January","FW_tmax_wavg_01",59
+"189","Max. monthly air temperature February","FW_tmax_wavg_02",60
+"190","Max. monthly air temperature March","FW_tmax_wavg_03",61
+"191","Max. monthly air temperature April","FW_tmax_wavg_04",62
+"192","Max. monthly air temperature May","FW_tmax_wavg_05",63
+"193","Max. monthly air temperature June","FW_tmax_wavg_06",64
+"194","Max. monthly air temperature July","FW_tmax_wavg_07",65
+"195","Max. monthly air temperature August","FW_tmax_wavg_08",66
+"196","Max. monthly air temperature September","FW_tmax_wavg_09",67
+"197","Max. monthly air temperature October","FW_tmax_wavg_10",68
+"198","Max. monthly air temperature November","FW_tmax_wavg_11",69
+"199","Max. monthly air temperature December","FW_tmax_wavg_12",70
+"200","Sum of monthly precipitation January","FW_prec_wsum_01",71
+"201","Sum of monthly precipitation February","FW_prec_wsum_02",72
+"202","Sum of monthly precipitation March","FW_prec_wsum_03",73
+"203","Sum of monthly precipitation April","FW_prec_wsum_04",74
+"204","Sum of monthly precipitation May","FW_prec_wsum_05",75
+"205","Sum of monthly precipitation June","FW_prec_wsum_06",76
+"206","Sum of monthly precipitation July","FW_prec_wsum_07",77
+"207","Sum of monthly precipitation August","FW_prec_wsum_08",78
+"208","Sum of monthly precipitation September","FW_prec_wsum_09",79
+"209","Sum of monthly precipitation October","FW_prec_wsum_10",80
+"210","Sum of monthly precipitation November","FW_prec_wsum_11",81
+"211","Sum of monthly precipitation December","FW_prec_wsum_12",82
+"212","Bioclim 1","FW_hydro_avg_01",83
+"213","Bioclim 2","FW_hydro_avg_02",84
+"214","Bioclim 3","FW_hydro_avg_03",85
+"215","Bioclim 4","FW_hydro_avg_04",86
+"216","Bioclim 5","FW_hydro_avg_05",87
+"217","Bioclim 6","FW_hydro_avg_06",88
+"218","Bioclim 7","FW_hydro_avg_07",89
+"219","Bioclim 8","FW_hydro_avg_08",90
+"220","Bioclim 9","FW_hydro_avg_09",91
+"221","Bioclim 10","FW_hydro_avg_10",92
+"222","Bioclim 11","FW_hydro_avg_11",93
+"223","Bioclim 12","FW_hydro_avg_12",94
+"224","Bioclim 13","FW_hydro_avg_13",95
+"225","Bioclim 14","FW_hydro_avg_14",96
+"226","Bioclim 15","FW_hydro_avg_15",97
+"227","Bioclim 16","FW_hydro_avg_16",98
+"228","Bioclim 17","FW_hydro_avg_17",99
+"229","Bioclim 18","FW_hydro_avg_18",100
+"230","Bioclim 19","FW_hydro_avg_19",101
+"231","Bioclim 1","FW_hydro_wavg_01",102
+"232","Bioclim 2","FW_hydro_wavg_02",103
+"233","Bioclim 3","FW_hydro_wavg_03",104
+"234","Bioclim 4","FW_hydro_wavg_04",105
+"235","Bioclim 5","FW_hydro_wavg_05",106
+"236","Bioclim 6","FW_hydro_wavg_06",107
+"237","Bioclim 7","FW_hydro_wavg_07",108
+"238","Bioclim 8","FW_hydro_wavg_08",109
+"239","Bioclim 9","FW_hydro_wavg_09",110
+"240","Bioclim 10","FW_hydro_wavg_10",111
+"241","Bioclim 11","FW_hydro_wavg_11",112
+"242","Bioclim 12","FW_hydro_wavg_12",113
+"243","Bioclim 13","FW_hydro_wavg_13",114
+"244","Bioclim 14","FW_hydro_wavg_14",115
+"245","Bioclim 15","FW_hydro_wavg_15",116
+"246","Bioclim 16","FW_hydro_wavg_16",117
+"247","Bioclim 17","FW_hydro_wavg_17",118
+"248","Bioclim 18","FW_hydro_wavg_18",119
+"249","Bioclim 19","FW_hydro_wavg_19",120
+"250","Evergreen/deciduous needleleaf trees","FW_lc_min_01",121
+"251","Evergreen broadleaf trees","FW_lc_min_02",122
+"252","Deciduous broadleaf trees","FW_lc_min_03",123
+"253","Mixed/other trees","FW_lc_min_04",124
+"254","Shrubs","FW_lc_min_05",125
+"255","Herbaceous vegetation","FW_lc_min_06",126
+"256","Cultivated and managed vegetation","FW_lc_min_07",127
+"257","Regularly flooded shrub/herbaceous vegetation","FW_lc_min_08",128
+"258","Urban/built-up","FW_lc_min_09",129
+"259","Snow/ice","FW_lc_min_10",130
+"260","Barren lands/sparse vegetation","FW_lc_min_11",131
+"261","Open water","FW_lc_min_12",132
+"262","Evergreen/deciduous needleleaf trees","FW_lc_max_01",133
+"263","Evergreen broadleaf trees","FW_lc_max_02",134
+"264","Deciduous broadleaf trees","FW_lc_max_03",135
+"265","Mixed/other trees","FW_lc_max_04",136
+"266","Shrubs","FW_lc_max_05",137
+"267","Herbaceous vegetation","FW_lc_max_06",138
+"268","Cultivated and managed vegetation","FW_lc_max_07",139
+"269","Regularly flooded shrub/herbaceous vegetation","FW_lc_max_08",140
+"270","Urban/built-up","FW_lc_max_09",141
+"271","Snow/ice","FW_lc_max_10",142
+"272","Barren lands/sparse vegetation","FW_lc_max_11",143
+"273","Open water","FW_lc_max_12",144
+"274","Evergreen/deciduous needleleaf trees","FW_lc_range_01",145
+"275","Evergreen broadleaf trees","FW_lc_range_02",146
+"276","Deciduous broadleaf trees","FW_lc_range_03",147
+"277","Mixed/other trees","FW_lc_range_04",148
+"278","Shrubs","FW_lc_range_05",149
+"279","Herbaceous vegetation","FW_lc_range_06",150
+"280","Cultivated and managed vegetation","FW_lc_range_07",151
+"281","Regularly flooded shrub/herbaceous vegetation","FW_lc_range_08",152
+"282","Urban/built-up","FW_lc_range_09",153
+"283","Snow/ice","FW_lc_range_10",154
+"284","Barren lands/sparse vegetation","FW_lc_range_11",155
+"285","Open water","FW_lc_range_12",156
+"286","Evergreen/deciduous needleleaf trees","FW_lc_avg_01",157
+"287","Evergreen broadleaf trees","FW_lc_avg_02",158
+"288","Deciduous broadleaf trees","FW_lc_avg_03",159
+"289","Mixed/other trees","FW_lc_avg_04",160
+"290","Shrubs","FW_lc_avg_05",161
+"291","Herbaceous vegetation","FW_lc_avg_06",162
+"292","Cultivated and managed vegetation","FW_lc_avg_07",163
+"293","Regularly flooded shrub/herbaceous vegetation","FW_lc_avg_08",164
+"294","Urban/built-up","FW_lc_avg_09",165
+"295","Snow/ice","FW_lc_avg_10",166
+"296","Barren lands/sparse vegetation","FW_lc_avg_11",167
+"297","Open water","FW_lc_avg_12",168
+"298","Evergreen/deciduous needleleaf trees","FW_lc_wavg_01",169
+"299","Evergreen broadleaf trees","FW_lc_wavg_02",170
+"300","Deciduous broadleaf trees","FW_lc_wavg_03",171
+"301","Mixed/other trees","FW_lc_wavg_04",172
+"302","Shrubs","FW_lc_wavg_05",173
+"303","Herbaceous vegetation","FW_lc_wavg_06",174
+"304","Cultivated and managed vegetation","FW_lc_wavg_07",175
+"305","Regularly flooded shrub/herbaceous vegetation","FW_lc_wavg_08",176
+"306","Urban/built-up","FW_lc_wavg_09",177
+"307","Snow/ice","FW_lc_wavg_10",178
+"308","Barren lands/sparse vegetation","FW_lc_wavg_11",179
+"309","Open water","FW_lc_wavg_12",180
+"310","Archean","FW_geo_wsum_01",181
+"311","Archean, Permian","FW_geo_wsum_02",182
+"312","Cambrian","FW_geo_wsum_03",183
+"313","Cambrian, Precambrian","FW_geo_wsum_04",184
+"314","Cambrian, Proterozoic","FW_geo_wsum_05",185
+"315","Carboniferous","FW_geo_wsum_06",186
+"316","Carboniferous, Devonian","FW_geo_wsum_07",187
+"317","Carboniferous, Miocene","FW_geo_wsum_08",188
+"318","Cenozoic","FW_geo_wsum_09",189
+"319","Cenozoic, Mesozoic","FW_geo_wsum_10",190
+"320","Cretaceous","FW_geo_wsum_11",191
+"321","Cretaceous, Carboniferous","FW_geo_wsum_12",192
+"322","Cretaceous, Devonian","FW_geo_wsum_13",193
+"323","Cretaceous, Jurassic","FW_geo_wsum_14",194
+"324","Cretaceous, Mississippian","FW_geo_wsum_15",195
+"325","Cretaceous, Paleogene, Neogene","FW_geo_wsum_16",196
+"326","Cretaceous, Permian","FW_geo_wsum_17",197
+"327","Cretaceous, Tertiary","FW_geo_wsum_18",198
+"328","Cretaceous, Triassic","FW_geo_wsum_19",199
+"329","Devonian","FW_geo_wsum_20",200
+"330","Devonian, Cambrian","FW_geo_wsum_21",201
+"331","Devonian, Ordovician","FW_geo_wsum_22",202
+"332","Devonian, Proterozoic","FW_geo_wsum_23",203
+"333","Devonian, Silurian","FW_geo_wsum_24",204
+"334","Devonian, Silurian, Ordovician","FW_geo_wsum_25",205
+"335","Holocene","FW_geo_wsum_26",206
+"336","Ice","FW_geo_wsum_27",207
+"337","Jurassic","FW_geo_wsum_28",208
+"338","Jurassic, Cambrian","FW_geo_wsum_29",209
+"339","Jurassic, Carboniferous","FW_geo_wsum_30",210
+"340","Jurassic, Devonian","FW_geo_wsum_31",211
+"341","Jurassic, Mississippian","FW_geo_wsum_32",212
+"342","Jurassic, Ordovician","FW_geo_wsum_33",213
+"343","Jurassic, Permian","FW_geo_wsum_34",214
+"344","Jurassic, Triassic","FW_geo_wsum_35",215
+"345","Kimberlite","FW_geo_wsum_36",216
+"346","Mesozoic","FW_geo_wsum_37",217
+"347","Mesozoic, Cenozoic","FW_geo_wsum_38",218
+"348","Mesozoic, Paleozoic","FW_geo_wsum_39",219
+"349","Mesozoic, Palezoic","FW_geo_wsum_40",220
+"350","Miocene","FW_geo_wsum_41",221
+"351","Mississippian","FW_geo_wsum_42",222
+"352","Mississippian, Cambrian","FW_geo_wsum_43",223
+"353","Mississippian, Devonian","FW_geo_wsum_44",224
+"354","Neogene","FW_geo_wsum_45",225
+"355","Neogene, Paleogene","FW_geo_wsum_46",226
+"356","Ordovician","FW_geo_wsum_47",227
+"357","Ordovician, Cambrian","FW_geo_wsum_48",228
+"358","Ordovician, Proterozoic","FW_geo_wsum_49",229
+"359","Paleogene","FW_geo_wsum_50",230
+"360","Paleogene, Cretaceous","FW_geo_wsum_51",231
+"361","Paleozoic","FW_geo_wsum_52",232
+"362","Paleozoic, Mesozoic","FW_geo_wsum_53",233
+"363","Paleozoic, Precambrian","FW_geo_wsum_54",234
+"364","Paleozoic, Proterozoic","FW_geo_wsum_55",235
+"365","Pennsylvanian","FW_geo_wsum_56",236
+"366","Pennsylvanian, Devonian","FW_geo_wsum_57",237
+"367","Pennsylvanian, Mississippian","FW_geo_wsum_58",238
+"368","Permian","FW_geo_wsum_59",239
+"369","Permian, Carboniferous","FW_geo_wsum_60",240
+"370","Permian, Devonian","FW_geo_wsum_61",241
+"371","Permian, Mississippian","FW_geo_wsum_62",242
+"372","Permian, Pennsylvanian","FW_geo_wsum_63",243
+"373","Permian, Triassic","FW_geo_wsum_64",244
+"374","Pleistocene","FW_geo_wsum_65",245
+"375","Pliocene, Quaternary","FW_geo_wsum_66",246
+"376","Precambrian","FW_geo_wsum_67",247
+"377","Precambrian, Devonian","FW_geo_wsum_68",248
+"378","Precambrian, Paleozoic","FW_geo_wsum_69",249
+"379","Proterozoic","FW_geo_wsum_70",250
+"380","Proterozoic, Archean","FW_geo_wsum_71",251
+"381","Quaternary","FW_geo_wsum_72",252
+"382","Quaternary, Neogne","FW_geo_wsum_73",253
+"383","Quaternary, Tertiary","FW_geo_wsum_74",254
+"384","Salt","FW_geo_wsum_75",255
+"385","Silurian","FW_geo_wsum_76",256
+"386","Silurian, Cambrian","FW_geo_wsum_77",257
+"387","Silurian, Ordovician","FW_geo_wsum_78",258
+"388","Silurian, Proterozoic","FW_geo_wsum_79",259
+"389","Tertiary","FW_geo_wsum_80",260
+"390","Tertiary, Cretaceous","FW_geo_wsum_81",261
+"391","Triassic","FW_geo_wsum_82",262
+"392","Triassic, Carboniferous","FW_geo_wsum_83",263
+"393","Triassic, Devonian","FW_geo_wsum_84",264
+"394","Triassic, Mississippian","FW_geo_wsum_85",265
+"395","Triassic, Ordovician","FW_geo_wsum_86",266
+"396","Triassic, Paleozoic","FW_geo_wsum_87",267
+"397","Triassic, Pennsylvanian","FW_geo_wsum_88",268
+"398","Triassic, Permian","FW_geo_wsum_89",269
+"399","Triassic, Proterozoic","FW_geo_wsum_90",270
+"400","Unknown","FW_geo_wsum_91",271
+"401","Water","FW_geo_wsum_92",272
+"402","Soil organic carbon (ORCDRC) across sub-catchment","FW_soil_min_01",273
+"403","Soil pH in H2O (PHIHOX) across sub-catchment","FW_soil_min_02",274
+"404","Sand content mass fraction (SNDPPT) across sub-catchment","FW_soil_min_03",275
+"405","Silt content mass fraction (SLTPPT) across sub-catchment","FW_soil_min_04",276
+"406","Clay content mass fraction (CLYPPT) across sub-catchment","FW_soil_min_05",277
+"407","Coarse fragments (> 2 mm fraction) volumetric (CFRVOL) across sub-catchment","FW_soil_min_06",278
+"408","Cation exchange capacity (CEC) across sub-catchment","FW_soil_min_07",279
+"409","Bulk density of the fine earth fraction (BLD) across sub-catchment","FW_soil_min_08",280
+"410","Depth to bedrock (R horizon) up to maximum 240 cm (BDRICM) across sub-catchment","FW_soil_min_09",281
+"411","Predicted probability of occurence (0-100%) of R horizon (BDRLOG) across sub-catchment","FW_soil_min_10",282
+"412","Soil organic carbon (ORCDRC) across sub-catchment","FW_soil_max_01",283
+"413","Soil pH in H2O (PHIHOX) across sub-catchment","FW_soil_max_02",284
+"414","Sand content mass fraction (SNDPPT) across sub-catchment","FW_soil_max_03",285
+"415","Silt content mass fraction (SLTPPT) across sub-catchment","FW_soil_max_04",286
+"416","Clay content mass fraction (CLYPPT) across sub-catchment","FW_soil_max_05",287
+"417","Coarse fragments (> 2 mm fraction) volumetric (CFRVOL) across sub-catchment","FW_soil_max_06",288
+"418","Cation exchange capacity (CEC) across sub-catchment","FW_soil_max_07",289
+"419","Bulk density of the fine earth fraction (BLD) across sub-catchment","FW_soil_max_08",290
+"420","Depth to bedrock (R horizon) up to maximum 240 cm (BDRICM) across sub-catchment","FW_soil_max_09",291
+"421","Predicted probability of occurence (0-100%) of R horizon (BDRLOG) across sub-catchment","FW_soil_max_10",292
+"422","Soil organic carbon (ORCDRC) across sub-catchment","FW_soil_range_01",293
+"423","Soil pH in H2O (PHIHOX) across sub-catchment","FW_soil_range_02",294
+"424","Sand content mass fraction (SNDPPT) across sub-catchment","FW_soil_range_03",295
+"425","Silt content mass fraction (SLTPPT) across sub-catchment","FW_soil_range_04",296
+"426","Clay content mass fraction (CLYPPT) across sub-catchment","FW_soil_range_05",297
+"427","Coarse fragments (> 2 mm fraction) volumetric (CFRVOL) across sub-catchment","FW_soil_range_06",298
+"428","Cation exchange capacity (CEC) across sub-catchment","FW_soil_range_07",299
+"429","Bulk density of the fine earth fraction (BLD) across sub-catchment","FW_soil_range_08",300
+"430","Depth to bedrock (R horizon) up to maximum 240 cm (BDRICM) across sub-catchment","FW_soil_range_09",301
+"431","Predicted probability of occurence (0-100%) of R horizon (BDRLOG) across sub-catchment","FW_soil_range_10",302
+"432","Soil organic carbon (ORCDRC) across sub-catchment","FW_soil_avg_01",303
+"433","Soil pH in H2O (PHIHOX) across sub-catchment","FW_soil_avg_02",304
+"434","Sand content mass fraction (SNDPPT) across sub-catchment","FW_soil_avg_03",305
+"435","Silt content mass fraction (SLTPPT) across sub-catchment","FW_soil_avg_04",306
+"436","Clay content mass fraction (CLYPPT) across sub-catchment","FW_soil_avg_05",307
+"437","Coarse fragments (> 2 mm fraction) volumetric (CFRVOL) across sub-catchment","FW_soil_avg_06",308
+"438","Cation exchange capacity (CEC) across sub-catchment","FW_soil_avg_07",309
+"439","Bulk density of the fine earth fraction (BLD) across sub-catchment","FW_soil_avg_08",310
+"440","Depth to bedrock (R horizon) up to maximum 240 cm (BDRICM) across sub-catchment","FW_soil_avg_09",311
+"441","Predicted probability of occurence (0-100%) of R horizon (BDRLOG) across sub-catchment","FW_soil_avg_10",312
+"442","Soil organic carbon (ORCDRC) across sub-catchment","FW_soil_wavg_01",313
+"443","Soil pH in H2O (PHIHOX) across sub-catchment","FW_soil_wavg_02",314
+"444","Sand content mass fraction (SNDPPT) across sub-catchment","FW_soil_wavg_03",315
+"445","Silt content mass fraction (SLTPPT) across sub-catchment","FW_soil_wavg_04",316
+"446","Clay content mass fraction (CLYPPT) across sub-catchment","FW_soil_wavg_05",317
+"447","Coarse fragments (> 2 mm fraction) volumetric (CFRVOL) across sub-catchment","FW_soil_wavg_06",318
+"448","Cation exchange capacity (CEC) across sub-catchment","FW_soil_wavg_07",319
+"449","Bulk density of the fine earth fraction (BLD) across sub-catchment","FW_soil_wavg_08",320
+"450","Depth to bedrock (R horizon) up to maximum 240 cm (BDRICM) across sub-catchment","FW_soil_wavg_09",321
+"451","Predicted probability of occurence (0-100%) of R horizon (BDRLOG) across sub-catchment","FW_soil_wavg_10",322

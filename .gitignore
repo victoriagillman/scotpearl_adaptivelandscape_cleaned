@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+/data/too_large_files
+data/confidential
+code/r_scripts/confidential
+data/plink_VP
+code/old_R_code
+code/unix/archive
