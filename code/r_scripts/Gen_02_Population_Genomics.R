@@ -246,15 +246,25 @@ library(LEA)
 # ped2lfmm(input.file = "LDpruned_ped.ped") #conversion only needs to be done once
 
 # snmf for admixture proportions
-pearl_lea = snmf(input.file = "LDpruned_ped.lfmm", K = 1:19, entropy = TRUE, project = "continue", CPU = 10, repetitions=10) #K = 18 for number populations?)
+set.seed(123) #standardise the results
+pearl_lea = snmf(input.file = "LDpruned_ped.lfmm", K = 1:19, entropy = TRUE, project = "new", CPU = 10, repetitions=10) #K = 18 for number populations?)
+save(pearl_lea, file = "pearl_lea_snmf.RData")
+load("pearl_lea_snmf.RData")
+# To load the project, use:
+  project = load.snmfProject("LDpruned_ped.snmfProject")
+# To remove the project, use:
+  # remove.snmfProject("LDpruned_ped.snmfProject")
 ##plot cross-entropy criterion of all runs of the project
+
+png("../../output/figures/snmf_scree.png", width = 10, height = 6, units = "in", res = 600)
 plot(pearl_lea, col = "blue", pch = 19, cex = 1.2)  #big declines until 4
-#ggsave("figures/snmf_scree.png") 
+dev.off()
+
 # summary of the project
 summary(pearl_lea)
 snmf_summary<- summary(pearl_lea) 
 snmf_summary$crossEntropy[,8]
-best_K<-as.numeric(which.min(snmf_summary$crossEntropy[1,]))# K = 8 = BEST, but big declines until 4
+best_K<-as.numeric(which.min(snmf_summary$crossEntropy[1,]))# K = 9 = BEST, but big declines until 4
 best_K #9
 
 snmf_Qscores_meta <- function(leaproj, Knum, meta) {
@@ -276,33 +286,8 @@ meta_reduced <- meta.fam %>%
 # snmf.K4.meta <- snmf_Qscores_meta(leaproj = pearl_lea, Knum = 4, meta = meta.fam)
 snmf.Kbest.meta <- snmf_Qscores_meta(leaproj = pearl_lea, Knum = best_K, meta = meta.fam)
 
-#write_csv(snmf.K4.meta, col_names = T, "snmf.K4.meta.csv")
-#meta.fam <- fread("snmf.K4.meta.csv")
-#head(snmf.K4.meta)
-# #### lea documentaion code ####
-# project=pearl_lea
-# # plot cross-entropy criterion of all runs of the project
-# plot(project, cex = 1.2, col = "lightblue", pch = 19)
-# 
-# # get the cross-entropy of all runs for K = 4
-# ce = cross.entropy(project, K = 4)
-# 
-# # select the run with the lowest cross-entropy for K = 4
-# best = which.min(ce)
-# 
-# # display the Q-matrix
-# my.colors <- c("tomato", "lightblue",
-#                "olivedrab", "gold", "pink", "purple", "brown")
-# barchart(project, K = 4, run = best,
-#          border = NA, space = 0,
-#          col = my.colors,
-#          xlab = "Individuals",
-#          ylab = "Ancestry proportions",
-#          main = "Ancestry matrix") -> bp
-# axis(1, at = 1:length(bp$order),
-#      labels = bp$order, las=1,
-#      cex.axis = .4)
-# ###########
+# write_csv(snmf.K4.meta, col_names = T, "../confidential/snmf.best.meta.csv")
+
 
 ########
 snmf.Kbest.admixtable <- Make_admix_table(snmf.Kbest.meta, Knum = best_K)
@@ -310,53 +295,6 @@ snmf.Kbest.admixtable <- Make_admix_table(snmf.Kbest.meta, Knum = best_K)
 ##########################################
 ########### admixture plot ###############
 ##########################################
-## reorder levels by region and where fish would hit first
-## MT-QC-NL
-# snmf.K4.admixtable$SiteCode <- factor(snmf.K4.admixtable$SiteCode, levels = c("NSH","MSW","MUN","UPS", "CMP","CNR","NPR","TNR","WAB","SH","ENG"))
-
-snmf.K4.meta <- as.data.frame(snmf.K4.meta)
-myvars <- c("ID","SiteCode", "AnonSiteCode","VCNAME", "Q1","Q2","Q3","Q4")
-snmf.K4.meta.reduced <- snmf.K4.meta[myvars]
-snmf.K4.meta.reduced <- droplevels(snmf.K4.meta.reduced)
-# snmf.K4.meta.reduced$SiteCode <- factor(snmf.K4.meta.reduced$SiteCode, levels = c("NSH","MSW","MUN","UPS", "CMP","CNR","NPR","TNR","WAB","SH","ENG"))
-
-# Convert dataframe to long format
-# library(reshape2)
-qlong <- reshape2::melt(snmf.K4.meta.reduced, id.vars=c("ID","AnonSiteCode","VCNAME", "SiteCode")) #Make sure have ALL id vars in here!
-
-nameslong <- reshape2::melt(snmf.K4.meta.reduced, id.vars=c("ID","SiteCode","VCNAME"))
-# write_csv(qlong, col_names = T, "../../output/anon_qlong_maf02.csv")
-
-# Define colour palette
-# pal = colorRampPalette(c("green","blue", "deeppink", "orange"))
-# pal = colorRampPalette(c("#ce1256","#df65b0", "#d7b5d8", "#f1eef6"))
-gg_color_hue <- function(n) {
-  hues = seq(15, 375, length = n + 1)
-  hcl(h = hues, l = 65, c = 100)[1:n]
-}
-cols = gg_color_hue(length(unique(qlong$variable)))
-
-library(paletteer)# for the classicpurple colours
-# cols = pal(length(unique(qlong$variable)))
-# Create admixture plot
-admix.bar = ggplot(data=qlong, aes(x=ID, y=value, fill=variable))+
-  geom_bar(stat = "identity", width = 1)+
-  scale_fill_paletteer_d("ggthemes::Classic_Purple_Gray_12") +
-  scale_y_continuous(expand = c(0,0))+
-  facet_grid(~AnonSiteCode,scales = "free", switch = "x", space = "free")+
-  # scale_fill_manual(values = cols)+
-  ylab("Admixture proportion")+
-  # xlab("Individual")+
-  theme(axis.text.x = element_blank(),
-        axis.ticks.x = element_blank(),
-        axis.title.x = element_blank(),
-        strip.text = element_text(colour="black", size=12),
-        panel.grid = element_blank(),
-        panel.background = element_blank(),
-        legend.position = "top",
-        legend.title = element_blank(),
-        legend.text = element_text(size = 12))
-admix.bar
 
 ##===============================
 ### Attempt multiple admix plots
@@ -411,12 +349,12 @@ generate_admix_plot <- function(Knumber, meta) {
 # cols<-sample(cols)
 opt_k_pl <- generate_admix_plot(best_K, meta_reduced)
 opt_k_pl
-# ggsave(plot= opt_k_pl, 
-#        width = 1000/100,
-#        height = 360/100,
-#        units = c( "in"),
-#        dpi = 600,
-#        filename = "C:/Users/r01vg21/OneDrive - University of Aberdeen/2.PROJECT/scotpearl_popgen/output/figures/optimumK_snmf.png")
+ggsave(plot= opt_k_pl,
+       width = 1000/100,
+       height = 360/100,
+       units = c( "in"),
+       dpi = 600,
+       filename = "C:/Users/r01vg21/OneDrive - University of Aberdeen/2.PROJECT/scotpearl_adaptivelandscape_cleaned/output/figures/optimumK_snmf.png")
 shell.exec("C:/Users/r01vg21/OneDrive - University of Aberdeen/2.PROJECT/scotpearl_popgen/output/figures/optimumK_snmf.png")
 
 # Generate admixture plots for K = 4, 5, 6, 7, 8, 9
