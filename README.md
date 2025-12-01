@@ -3,7 +3,9 @@ Scripts for bioinformatics processing and analysis. Location data is not provide
 
 __Contact:__      victoria.gillman.21@abdn.ac.uk
 
-__Citation:__     Gillman V, Cosgrove P, Morrissey B, Lancaster L, Pritchard V, Layton K. 2025. Genomic evidence of local adaptation in Scottish Margaritifera margaritifera. Published online at [Pending!](unknown_link)
+__Citation:__     Gillman V, Cosgrove P, Morrissey B, Lancaster L, Pritchard V, Layton K. 2025. Genomic evidence of local adaptation in Scottish freshwater pearl mussels. Published online as a preprint: [https://doi.org/10.21203/rs.3.rs-7363533/v1](https://doi.org/10.21203/rs.3.rs-7363533/v1)
+
+__Raw Data:__ Raw genomic RADSeq data are available in the NCBI Short Read Archive under accession **PRJNA1370707**. 
 
 
 ### Usage Guidance
